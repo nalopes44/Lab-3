@@ -8,7 +8,7 @@ class PatientExam:
         self.height_m = height
 
     def get_BMI(self) -> float:
-        return self.weight_kg / self.height_m ** 2
+        return self.weight_kg / (self.height_m ** 2)
 
     def get_exam_month(self) -> int:
-        return self.exam_date.split('/')[0]
+        return int(self.exam_date.split('/')[0])
